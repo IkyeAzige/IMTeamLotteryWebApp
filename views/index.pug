@@ -1,5 +1,17 @@
 extends layout
 
-block content
-  h1= title
-  p Welcome to #{title}
+block content 
+  each ticket in tickeks 
+    div
+      div
+      h3=ticket.syndicate
+      h4=ticket.startdate
+      h4=ticket.endDate 
+      h4=ticket.numberone 
+      h4=ticket.numbertwo 
+      h4=ticket.numberthreee 
+      h4=ticket.numberfour 
+      h4=ticket.numberfive 
+      h4=ticket.numbersix 
+      h4=ticket.validfor 
+
